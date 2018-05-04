@@ -9,23 +9,29 @@
 # This script will assume being located into the utils/ subfolder of the
 # mod.
 
-MODNAME="bicobus"
+if [[ -z "${MODNAME}" ]]; then
+    MODNAME="bicobus"
+fi
+
 WORKINGDIRECTORY="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "${WORKINGDIRECTORY}/.."
 
 DESTINATION=""
 if [[ -n "$@" ]]; then
     if [[ -d $@ ]]; then
         DESTINATION=$@
         DEPLOYDIR="${DESTINATION}/res/mods"
+        if [[ ! -d $DEPLOYDIR ]]; then
+            echo >&2 "ERROR: target directory isn't a lilith game directory. Abording."
+            exit 1
+        fi
     else
         echo >&2 "WARNING: Couldn't find target directory, or isn't a directory. Ignoring."
     fi
 fi
 
-cd "${WORKINGDIRECTORY}/.."
-
 if [[ -n "${DESTINATION}" ]]; then
-    rsync -vcru "${MODNAME}/" "${DEPLOYDIR}/${MODNAME}"
+    rsync -vcru "${WORKINGDIRECTORY}/../${MODNAME}/" "${DEPLOYDIR}/${MODNAME}"
     exit 0
 fi
 
