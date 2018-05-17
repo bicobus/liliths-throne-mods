@@ -21,7 +21,7 @@
 		<namePlural pluralByDefault="false"><![CDATA[tailcoats]]></namePlural> 
 		
 		<!-- The description that's shown in tooltips and on the item's inspection page. -->
-		<description><![CDATA[A caot for formal evening occasions.]]></description> 
+		<description><![CDATA[A coat for formal evening occasions.]]></description> 
 		
 		<!-- The default physical resistance for this piece of clothing. Usually use 0 or 1, but if it's armour, then values up to 5 would be fitting (any more than that might be very OP). -->
 		<physicalResistance>2</physicalResistance> 
