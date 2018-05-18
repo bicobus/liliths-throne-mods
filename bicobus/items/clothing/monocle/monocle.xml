@@ -107,7 +107,12 @@
 		ANY GRADIENTS THAT YOU USE SHOULD BE CALLED: "innoGrad1", "innoGrad2", etc.
 		You can see a visual representation of these colours here: https://www.lilithsthrone.com/wiki/doku.php?id=modding_wiki:modding:creating_clothes
 		Colour lists to be used can be found here: https://github.com/Innoxia/liliths-throne-public/blob/master/src/com/lilithsthrone/utils/ColourListPresets.java -->
-		<!--primaryColours>
+		<primaryColours>
+			<colour>CLOTHING_BROWN</colour>
+			<colour>CLOTHING_YELLOW</colour>
+			<colour>CLOTHING_PINK</colour>
+			<colour>CLOTHING_BLACK</colour>
+			<colour>CLOTHING_WHITE</colour>
 			<colour>CLOTHING_PURPLE_LIGHT</colour>
 			<colour>CLOTHING_PINK_LIGHT</colour>
 			<colour>CLOTHING_GREEN_LIME</colour>
@@ -115,9 +120,13 @@
 			<colour>CLOTHING_RED_BRIGHT</colour>
 			<colour>CLOTHING_ORANGE</colour>
 			<colour>CLOTHING_ORANGE_BRIGHT</colour>
-			<colour>CLOTHING_ROSE_GOLD</colour>
 		</primaryColours>
 		<primaryColoursDye>
+			<colour>CLOTHING_BROWN</colour>
+			<colour>CLOTHING_YELLOW</colour>
+			<colour>CLOTHING_PINK</colour>
+			<colour>CLOTHING_BLACK</colour>
+			<colour>CLOTHING_WHITE</colour>
 			<colour>CLOTHING_PURPLE</colour>
 			<colour>CLOTHING_PURPLE_DARK</colour>
 			<colour>CLOTHING_PURPLE_LIGHT</colour>
@@ -134,9 +143,9 @@
 			<colour>CLOTHING_ORANGE_BRIGHT</colour>
 			<colour>CLOTHING_ORANGE_DARK</colour>
 			<colour>CLOTHING_ROSE_GOLD</colour>
-		</primaryColoursDye-->
-		<primaryColours values="ALL_METAL"/>
-		<primaryColoursDye values="ALL"/>
+		</primaryColoursDye>
+		<!--primaryColours values="ALL_METAL"/>
+		<primaryColoursDye values="ALL"/-->
 		<secondaryColours values="ALL_METAL"/>
 		<secondaryColoursDye values="ALL_METAL"/>
 		<tertiaryColours/>
