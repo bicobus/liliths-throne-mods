@@ -31,7 +31,7 @@ if [[ -n "$@" ]]; then
 fi
 
 if [[ -n "${DESTINATION}" ]]; then
-    rsync -vcru "${WORKINGDIRECTORY}/../${MODNAME}/" "${DEPLOYDIR}/${MODNAME}"
+    rsync -vcru --delete "${WORKINGDIRECTORY}/../${MODNAME}/" "${DEPLOYDIR}/${MODNAME}"
     exit 0
 fi
 
